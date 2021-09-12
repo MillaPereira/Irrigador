@@ -1,0 +1,22 @@
+import React from "react";
+import { View, Text } from "react-native";
+import { styles } from "./styles";
+import { ListPlants } from "../../components/ListPlants";
+import { BottomButton } from "../../components/BottomButton";
+
+export const Home = ({ nameUser = "Kevin" }) => {
+  return (
+    <View style={styles.container}>
+      <View style={styles.greeting}>
+        <Text style={styles.text}>Bem vindo(a), </Text>
+        <Text style={styles.userName}>{nameUser}</Text>
+      </View>
+
+      <View style={styles.list}>
+        <ListPlants />
+      </View>
+
+      <BottomButton />
+    </View>
+  );
+};

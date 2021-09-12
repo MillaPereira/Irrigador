@@ -7,6 +7,10 @@ const AppStack = createStackNavigator();
 import Incidents from "./pages/Incidents";
 import Detail from "./pages/Detail";
 import BemVindo from "./pages/BemVindo";
+import { Home } from "./pages/Home";
+
+import { Card } from "./components/Card";
+import { ListPlants } from "./components/ListPlants";
 
 export default function Routes() {
   return (
@@ -19,6 +23,7 @@ export default function Routes() {
           },
         }}
       >
+        <AppStack.Screen name="Home" component={Home} />
         <AppStack.Screen name="BemVindo" component={BemVindo} />
         <AppStack.Screen name="Incidents" component={Incidents} />
         <AppStack.Screen name="Detail" component={Detail} />

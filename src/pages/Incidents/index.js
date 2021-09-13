@@ -12,9 +12,13 @@ import {
   Modal,
   Pressable,
 } from "react-native";
+import { ImageBackground, StyleSheet } from "react-native";
 
 import api from "../../services/api";
-import { styles } from "./styles";
+
+import logoImg from "../../assets/fotoPlantinha.png";
+
+import styles from "./styles";
 
 export default function Incidents() {
   //   const [incidents, setIncidents] = useState([]);

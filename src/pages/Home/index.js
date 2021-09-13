@@ -4,7 +4,9 @@ import { styles } from "./styles";
 import { ListPlants } from "../../components/ListPlants";
 import { BottomButton } from "../../components/BottomButton";
 
-export const Home = ({ nameUser = "Kevin" }) => {
+export const Home = ({ route }) => {
+  const { nameUser } = route.params;
+
   return (
     <View style={styles.container}>
       <View style={styles.greeting}>

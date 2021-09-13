@@ -8,7 +8,7 @@ import plantIcon from "../../assets/fotoPlantinha.png";
 
 export const Card = ({ plantName }) => {
   const hello = () => {
-    alert("hello");
+    alert("Detalhes da planta vão aparecer aq");
   };
 
   return (

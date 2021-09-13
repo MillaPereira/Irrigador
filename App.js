@@ -1,6 +1,6 @@
 import { StatusBar } from "react-native";
 import React from "react";
-import Background from "./src/pages/Background";
+import { Background } from "./src/components/Background";
 
 import Routes from "./src/routes";
 

@@ -2,9 +2,8 @@ import React from "react";
 import { ImageBackground } from "react-native";
 import { styles } from "./styles";
 
-export default function Background({ children }) {
+export const Background = ({ children }) => {
   const backgroundImage = require("../../assets/fundo.png");
-  //<Image source={backgroundImage} style={styles.background}/>
   return (
     <ImageBackground
       source={backgroundImage}
@@ -14,4 +13,4 @@ export default function Background({ children }) {
       {children}
     </ImageBackground>
   );
-}
+};

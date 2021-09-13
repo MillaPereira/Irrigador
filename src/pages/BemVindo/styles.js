@@ -1,13 +1,9 @@
 import { StyleSheet } from "react-native";
-import Constants from "expo-constants";
 import { theme } from "../../global/styles/theme";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    //paddingHorizontal: 24,
-    paddingTop: Constants.statusBarHeight + 20,
-    backgroundColor: "#86DB78",
     opacity: 0.77,
     justifyContent: "center",
     alignItems: "center",
@@ -20,33 +16,28 @@ export default StyleSheet.create({
     textAlign: "center",
     color: "#000000",
   },
-  backgroundImage: {
-    flex: 1,
-    resizeMode: "cover", // or 'stretch'
-    position: "absolute",
-  },
   button: {
     height: 60,
     width: "70%",
-    backgroundColor: theme.colors.lightGray,
+    backgroundColor: "#fff",
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 30,
-    fontSize: 17,
+    fontSize: 18,
   },
   input: {
     height: 40,
-    margin: 12,
+    margin: 15,
     width: "50%",
-    borderColor: theme.colors.lightGray,
+    borderColor: "#fff",
     borderBottomWidth: 1,
     borderBottomColor: theme.colors.darkGreen,
-    fontSize: 16,
+    fontSize: 20,
     padding: 10,
     textAlign: "center",
   },
   textoBotao: {
     color: theme.colors.darkGreen,
-    fontSize: 16,
+    fontSize: 18,
   },
 });
